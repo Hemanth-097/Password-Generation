@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="flex">
+        <div class="container">
+            <div class="upperSection">
+                <h1 class="title">Generate a<br><span class="title-green">random password</span></h1>
+                <h2 class="supportingTitle">Never use an insecure password again.</h2>
+                <span id="password-slider-text">Length: <label for="slider" id="sliderNumber">8</label></span>
+
+                <input type="range" min="8" max="12" value="8" class="slider" id="slider" name="slider"></input>
+
+                <button class="btn" onclick="getGeneratePasswords()"><i class="fa fa-flash"></i>Generate
+                    passwords</button>
+
+            </div>
+
+            <hr>
+            <div class="downSection">
+                <div class="generatedPassword" id="password1-el"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+                <div class="generatedPassword" id="password2-el"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+                <div class="generatedPassword" id="password3-el"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+                <div class="generatedPassword" id="password4-el"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+                <div id="letter-main"></div>
+            </div>
+        </div>
+    </main>
+    <script src ="index.js"></script>
+</body>
+</html>
